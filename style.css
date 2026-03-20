@@ -16,14 +16,12 @@
 
 body{
     background: var(--grey900);
-    place-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
+    font-size: 0.875rem;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .card{
@@ -32,6 +30,8 @@ body{
     border-radius: 16px;
     padding: 40px;
     color: var(--white);
+    margin: auto;
+    justify-content: center;
 }
 
 .card img {
@@ -46,13 +46,13 @@ body{
     font-size: 24px;
 }
 
-.card #location {
+.location {
     color: var(--green);
     font-weight: 600;
     padding-bottom: 28px;
 }
 
-.card #description {
+.description {
     padding-bottom: 28px;
 }
 
@@ -69,11 +69,11 @@ body{
     border-radius: 8px;
     color: white;
     background: var(--grey700);
-    transition: all 0.25s;
+    transition: all 0.5s;
     cursor: pointer;
 }
 
-.buttons button:hover, button:focus {
+.buttons button:focus, button:hover {
     background: var(--green);
     color: var(--grey900);
 }
