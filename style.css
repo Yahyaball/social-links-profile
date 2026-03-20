@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--grey900);
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.card{
+    background: var(--grey800);
+    width: 382px;
+    border-radius: 16px;
+    padding: 40px;
+    color: var(--white);
+}
+
+.card img {
+    width: 90px;
+    border-radius: 100px;
+}
+
+.card h1 {
+    font-weight: 600;
+    padding-top: 28px;
+    padding-bottom: 8px;
+    font-size: 24px;
+}
+
+.card #location {
+    color: var(--green);
+    font-weight: 600;
+    padding-bottom: 28px;
+}
+
+.card #description {
+    padding-bottom: 28px;
+}
+
+.buttons {
+    display: grid;
+    gap: 14px;
+}
+
+.buttons button {
+    border: 0;
+    outline: 0;
+    height: 46px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: white;
+    background: var(--grey700);
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.buttons button:hover, button:focus {
+    background: var(--green);
+    color: var(--grey900);
+}
